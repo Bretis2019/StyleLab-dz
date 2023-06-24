@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d9f48cd4f8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="src/images/Logo.svg">
+    <title>StyleLab</title>
+    <script defer src="src/app.js"></script>
+</head>
+<body>
+<header class="head">
+</header>
+<div class="bottom">
+</div>
+<script src="dist/main.js"></script>
+<svg>
+    <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+        <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+</svg>
+</body>
+</html>
